@@ -1,7 +1,7 @@
 require 'formula'
  
 class TmuxIterm2 < Formula
-  url 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130122.zip'
+  url 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130210.zip'
   sha1 'a5f55b545500ebcb97e842f65ea9c90dd457f228'
   
   head 'git://tmux.git.sourceforge.net/gitroot/tmux/tmux'
@@ -15,7 +15,7 @@ class TmuxIterm2 < Formula
   end
  
   def install
-    system "tar -xvf tmux-for-iTerm2-20130122.tar.gz"
+    system "tar -xvf tmux-for-iTerm2-20130210.tar.gz"
     
     Dir.chdir "tmux" do
       system "sh", "autogen.sh" if build.head?
