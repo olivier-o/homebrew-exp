@@ -1,8 +1,9 @@
 require 'formula'
  
 class TmuxIterm2 < Formula
-  url 'https://github.com/olivier-o/homebrew-exp/blob/master/iTerm2-1_0_0_20130210-tmux.zip'
-  sha1 '0a91aea192a3160934a1f17f8a66ffdc0cf07a85'
+  url 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130122.zip'
+  sha1 'a5f55b545500ebcb97e842f65ea9c90dd457f228'
+  
   head 'git://tmux.git.sourceforge.net/gitroot/tmux/tmux'
  
   depends_on 'pkg-config' => :build
@@ -14,8 +15,7 @@ class TmuxIterm2 < Formula
   end
  
   def install
-    puts `pwd`
-    system "tar -xvf tmux-for-iTerm2-20130210.tar.gz"
+    system "tar -xvf tmux-for-iTerm2-20130122.tar.gz"
     
     Dir.chdir "tmux" do
       system "sh", "autogen.sh" if build.head?
