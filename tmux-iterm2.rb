@@ -15,7 +15,7 @@ class TmuxIterm2 < Formula
   end
  
   def install
-    `pwd`
+    puts `pwd`
     system "tar -xvf tmux-for-iTerm2-20130210.tar.gz"
     
     Dir.chdir "tmux" do
