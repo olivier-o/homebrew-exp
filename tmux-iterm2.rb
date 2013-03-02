@@ -1,7 +1,7 @@
 require 'formula'
  
 class TmuxIterm2 < Formula
-  url 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130210.zip'
+  url 'https://github.com/olivier-o/homebrew-exp/blob/master/iTerm2-1_0_0_20130210-tmux.zip'
   sha1 '3afa25208679b695dd06e29324dcc9d8f380ebbe'
   
   head 'git://tmux.git.sourceforge.net/gitroot/tmux/tmux'
