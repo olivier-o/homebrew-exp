@@ -15,7 +15,7 @@ class TmuxIterm2 < Formula
   end
  
   def install
-    system "tar -xvf tmux-for-iTerm2-20130210.tar.gz"
+    system "tar -xvf https://code.google.com/p/iterm2/downloads/detail?name=tmux-for-iTerm2-20130210.tar.gz"
     
     Dir.chdir "tmux" do
       system "sh", "autogen.sh" if build.head?
