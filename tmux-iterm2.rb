@@ -2,8 +2,7 @@ require 'formula'
  
 class TmuxIterm2 < Formula
   url 'https://github.com/olivier-o/homebrew-exp/blob/master/iTerm2-1_0_0_20130210-tmux.zip'
-  sha1 '4f85b348bc68f1e8916d9c8840c38cec10661571'
-  
+
   head 'git://tmux.git.sourceforge.net/gitroot/tmux/tmux'
  
   depends_on 'pkg-config' => :build
